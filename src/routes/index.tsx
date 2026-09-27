@@ -196,7 +196,7 @@ function PricingPage() {
 
             <div className="relative flex items-start justify-center pt-[105px]">
               {/* Starter */}
-              <article className="mt-[35px] w-[240px] -rotate-[2deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="mt-[35px] w-[240px] -rotate-[5deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Starter</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Small Businesses</p>
                 <p className="mt-4">
@@ -263,7 +263,7 @@ function PricingPage() {
               </article>
 
               {/* Enterprise */}
-              <article className="mt-[52px] w-[244px] rotate-[2deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="mt-[52px] w-[244px] rotate-[5deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Enterprise</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Large Organizations</p>
                 <p className="mt-4">
