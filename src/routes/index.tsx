@@ -196,7 +196,7 @@ function PricingPage() {
 
             <div className="relative flex items-start justify-center pt-[105px]">
               {/* Starter */}
-              <article className="mt-[35px] w-[240px] -rotate-[5deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="mt-[35px] w-[240px] -rotate-[4deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Starter</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Small Businesses</p>
                 <p className="mt-4">
@@ -263,7 +263,7 @@ function PricingPage() {
               </article>
 
               {/* Enterprise */}
-              <article className="mt-[52px] w-[244px] rotate-[5deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="mt-[52px] w-[244px] rotate-[3.5deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Enterprise</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Large Organizations</p>
                 <p className="mt-4">
@@ -277,7 +277,7 @@ function PricingPage() {
                     "Advanced Security",
                     "Scalable Infrastructure",
                   ].map((f) => (
-                    <li key={f} className="flex items-center gap-2.5 text-[14px] text-ink">
+                    <li key={f} className="flex items-center gap-2.5 whitespace-nowrap text-[14px] text-ink">
                       <CircleCheck className="h-[17px] w-[17px] text-violet" strokeWidth={2} />
                       {f}
                     </li>
@@ -314,7 +314,7 @@ function PricingPage() {
                 }`}
               >
                 <span className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-brand-soft text-brand">
-                  <Icon className="h-[30px] w-[30px] fill-current" strokeWidth={2} />
+                  <Icon className="h-[30px] w-[30px]" strokeWidth={2} />
                 </span>
                 <span>
                   <span className="block text-[29px] font-extrabold leading-none text-ink">
