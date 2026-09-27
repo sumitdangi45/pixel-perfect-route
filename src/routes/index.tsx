@@ -107,11 +107,11 @@ function PricingPage() {
 
           <a
             href="#"
-            className="inline-flex h-[44px] shrink-0 items-center gap-2 whitespace-nowrap rounded-[10px] px-4 text-[14px] sm:h-[54px] sm:gap-3 sm:px-7 sm:text-[16px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
+            className="inline-flex h-[44px] shrink-0 items-center gap-2 whitespace-nowrap rounded-[10px] px-3.5 text-[13px] min-[400px]:px-4 min-[400px]:text-[14px] sm:h-[54px] sm:gap-3 sm:px-7 sm:text-[16px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
             style={{ backgroundImage: "var(--gradient-brand)" }}
           >
             Get a Free Quote
-            <ArrowRight className="h-[18px] w-[18px]" strokeWidth={2.5} />
+            <ArrowRight className="hidden h-[18px] w-[18px] sm:block" strokeWidth={2.5} />
           </a>
         </div>
       </header>
@@ -137,7 +137,7 @@ function PricingPage() {
               plan for you. No hidden charges, no surprises — just real value.
             </p>
 
-            <ul className="mt-9 grid grid-cols-2 gap-x-4 gap-y-5 sm:flex sm:flex-wrap sm:items-center sm:gap-x-6 xl:gap-x-4 2xl:flex-nowrap 2xl:gap-x-6">
+            <ul className="mt-9 grid grid-cols-2 gap-x-4 gap-y-5 sm:flex sm:flex-wrap sm:items-center sm:gap-x-6 xl:grid xl:max-w-[440px] xl:gap-x-6 2xl:flex 2xl:max-w-none 2xl:flex-nowrap">
               {highlights.map(({ icon: Icon, line1, line2 }) => (
                 <li key={line1} className="flex items-center gap-3">
                   <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand">
@@ -172,7 +172,7 @@ function PricingPage() {
           </div>
 
           {/* Right: cards */}
-          <div className="mx-auto w-[740px] [zoom:0.46] min-[480px]:[zoom:0.6] sm:[zoom:0.9] md:[zoom:1] xl:[zoom:0.74] min-[1366px]:[zoom:0.82] min-[1440px]:[zoom:0.9] 2xl:[zoom:1]"><div className="relative min-h-[660px]">
+          <div className="mx-auto w-[740px] [zoom:0.46] min-[480px]:[zoom:0.6] sm:[zoom:0.9] md:[zoom:1] xl:[zoom:0.8] min-[1366px]:[zoom:0.86] min-[1440px]:[zoom:0.9] 2xl:[zoom:1]"><div className="relative min-h-[660px]">
             <div
               aria-hidden="true"
               className="absolute left-1/2 top-[40px] h-[540px] w-[540px] -translate-x-1/2 rounded-full opacity-70"
