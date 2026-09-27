@@ -143,7 +143,7 @@ function PricingPage() {
                   <span className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-brand-soft text-brand">
                     <Icon className="h-[19px] w-[19px]" strokeWidth={2} />
                   </span>
-                  <span className="text-[16px] font-medium leading-[1.3] text-ink">
+                  <span className="whitespace-nowrap text-[16px] font-medium leading-[1.3] text-ink">
                     {line1}
                     <br />
                     {line2}
@@ -152,10 +152,10 @@ function PricingPage() {
               ))}
             </ul>
 
-            <div className="mt-10 flex flex-wrap items-center gap-5">
+            <div className="mt-10 flex flex-nowrap items-center gap-5">
               <a
                 href="#"
-                className="inline-flex h-[62px] items-center gap-4 rounded-[10px] px-8 text-[19px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
+                className="inline-flex h-[62px] shrink-0 items-center gap-4 rounded-[10px] px-7 text-[19px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
                 style={{ backgroundImage: "var(--gradient-brand)" }}
               >
                 Get a Free Consultation
@@ -163,7 +163,7 @@ function PricingPage() {
               </a>
               <a
                 href="#"
-                className="inline-flex h-[62px] items-center gap-3 rounded-[10px] border border-brand/35 bg-white px-8 text-[19px] font-semibold text-ink transition-colors hover:bg-brand-soft"
+                className="inline-flex h-[62px] shrink-0 items-center gap-3 rounded-[10px] border border-brand/35 bg-white px-8 text-[19px] font-semibold text-ink transition-colors hover:bg-brand-soft"
               >
                 <PlayCircle className="h-[26px] w-[26px] text-brand" strokeWidth={1.8} />
                 Watch Pricing Guide
