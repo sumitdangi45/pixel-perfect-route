@@ -67,9 +67,9 @@ function PricingPage() {
     >
       {/* Nav */}
       <header className="w-full bg-white">
-        <div className="mx-auto flex h-[90px] max-w-[1536px] items-center justify-between px-[60px]">
-          <a href="/" className="flex items-center gap-3">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <div className="mx-auto flex h-[72px] max-w-[1536px] items-center justify-between gap-4 px-5 sm:h-[90px] sm:px-10 2xl:px-[60px]">
+          <a href="/" className="flex shrink-0 items-center gap-3">
+            <svg className="h-8 w-8 sm:h-10 sm:w-10" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
               <path
                 d="M19 4 3 34h9.5L21 16.5 27 30h-7l3.5 7H37L23.5 8 19 4Z"
                 fill="url(#annigrad)"
@@ -82,22 +82,22 @@ function PricingPage() {
               </defs>
             </svg>
             <span className="leading-none">
-              <span className="block text-[34px] font-bold tracking-tight text-ink">Anni</span>
-              <span className="mt-0.5 block text-[10.5px] font-bold tracking-[0.13em] text-ink">
+              <span className="block text-[26px] font-bold sm:text-[34px] tracking-tight text-ink">Anni</span>
+              <span className="mt-0.5 block whitespace-nowrap text-[8.5px] font-bold tracking-[0.13em] text-ink sm:text-[10.5px]">
                 WEB SOLUTIONS PVT. LTD.
               </span>
             </span>
           </a>
 
-          <nav className="hidden items-center gap-9 lg:flex">
+          <nav className="hidden items-center gap-7 xl:flex 2xl:gap-9">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href="#"
                 className={
                   item.active
-                    ? "relative py-[34px] text-[15px] font-medium text-brand after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:rounded-full after:bg-brand after:content-['']"
-                    : "py-[34px] text-[15px] font-normal text-ink transition-colors hover:text-brand"
+                    ? "relative whitespace-nowrap py-[34px] text-[15px] font-medium text-brand after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:rounded-full after:bg-brand after:content-['']"
+                    : "whitespace-nowrap py-[34px] text-[15px] font-normal text-ink transition-colors hover:text-brand"
                 }
               >
                 {item.label}
@@ -107,43 +107,43 @@ function PricingPage() {
 
           <a
             href="#"
-            className="inline-flex h-[54px] items-center gap-3 rounded-[10px] px-7 text-[16px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
+            className="inline-flex h-[44px] shrink-0 items-center gap-2 whitespace-nowrap rounded-[10px] px-3.5 text-[13px] min-[400px]:px-4 min-[400px]:text-[14px] sm:h-[54px] sm:gap-3 sm:px-7 sm:text-[16px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
             style={{ backgroundImage: "var(--gradient-brand)" }}
           >
             Get a Free Quote
-            <ArrowRight className="h-[18px] w-[18px]" strokeWidth={2.5} />
+            <ArrowRight className="hidden h-[18px] w-[18px] sm:block" strokeWidth={2.5} />
           </a>
         </div>
       </header>
 
       {/* Hero */}
-      <main className="relative mx-auto max-w-[1536px] pl-[76px] pr-[60px]">
-        <div className="grid items-start gap-10 pt-[60px] lg:grid-cols-[minmax(0,640px)_minmax(0,1fr)]">
+      <main className="relative mx-auto max-w-[1536px] px-5 sm:px-10 2xl:pl-[76px] 2xl:pr-[60px]">
+        <div className="grid items-start gap-10 pt-10 sm:pt-[60px] xl:grid-cols-[minmax(0,560px)_minmax(0,1fr)] 2xl:grid-cols-[minmax(0,640px)_minmax(0,1fr)]">
           {/* Left */}
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-soft px-5 py-[10px] text-[15px] font-semibold text-brand">
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-2 text-[13px] font-semibold text-brand sm:px-5 sm:py-[10px] sm:text-[15px]">
               <TagIcon />
               Simple &amp; Transparent Pricing
             </span>
 
-            <h1 className="mt-9 text-[80px] font-bold leading-[1.0] tracking-[-0.02em] text-ink">
+            <h1 className="mt-7 text-[44px] font-bold sm:mt-9 sm:text-[68px] xl:text-[66px] 2xl:text-[80px] leading-[1.0] tracking-[-0.02em] text-ink">
               Plans for Every
               <br />
               <span className="text-brand-dark">Stage of Growth</span>
             </h1>
 
-            <p className="mt-6 max-w-[620px] text-[19px] leading-[1.62] text-ink-soft">
+            <p className="mt-6 max-w-[620px] text-[16px] sm:text-[19px] leading-[1.62] text-ink-soft">
               Whether you&apos;re a startup, a growing business, or an enterprise, we have the right
               plan for you. No hidden charges, no surprises — just real value.
             </p>
 
-            <ul className="mt-9 flex flex-nowrap items-center gap-x-6">
+            <ul className="mt-9 grid grid-cols-2 gap-x-4 gap-y-5 sm:flex sm:flex-wrap sm:items-center sm:gap-x-6 xl:grid xl:max-w-[440px] xl:gap-x-6 2xl:flex 2xl:max-w-none 2xl:flex-nowrap">
               {highlights.map(({ icon: Icon, line1, line2 }) => (
                 <li key={line1} className="flex items-center gap-3">
-                  <span className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-brand-soft text-brand">
+                  <span className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand">
                     <Icon className="h-[19px] w-[19px]" strokeWidth={2} />
                   </span>
-                  <span className="whitespace-nowrap text-[16px] font-normal leading-[1.45] text-ink">
+                  <span className="whitespace-nowrap text-[14px] font-normal leading-[1.45] sm:text-[16px] xl:text-[15px] 2xl:text-[16px] text-ink">
                     {line1}
                     <br />
                     {line2}
@@ -152,10 +152,10 @@ function PricingPage() {
               ))}
             </ul>
 
-            <div className="mt-10 flex flex-nowrap items-center gap-5">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
               <a
                 href="#"
-                className="inline-flex h-[62px] shrink-0 items-center gap-4 rounded-[10px] px-7 text-[19px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
+                className="inline-flex h-[56px] shrink-0 items-center justify-center gap-4 rounded-[10px] px-7 text-[17px] sm:h-[62px] sm:text-[19px] xl:px-6 xl:text-[17px] 2xl:px-7 2xl:text-[19px] font-semibold text-brand-foreground shadow-cta transition-transform hover:-translate-y-0.5"
                 style={{ backgroundImage: "var(--gradient-brand)" }}
               >
                 Get a Free Consultation
@@ -163,7 +163,7 @@ function PricingPage() {
               </a>
               <a
                 href="#"
-                className="inline-flex h-[62px] shrink-0 items-center gap-3 rounded-[10px] border border-brand/35 bg-white px-8 text-[19px] font-semibold text-ink transition-colors hover:bg-brand-soft"
+                className="inline-flex h-[56px] shrink-0 items-center justify-center gap-3 rounded-[10px] border border-brand/35 bg-white px-8 text-[17px] sm:h-[62px] sm:text-[19px] xl:px-6 xl:text-[17px] 2xl:px-8 2xl:text-[19px] font-semibold text-ink transition-colors hover:bg-brand-soft"
               >
                 <PlayCircle className="h-[26px] w-[26px] text-brand" strokeWidth={1.8} />
                 Watch Pricing Guide
@@ -172,7 +172,7 @@ function PricingPage() {
           </div>
 
           {/* Right: cards */}
-          <div className="relative min-h-[660px]">
+          <div className="mx-auto w-[740px] [zoom:0.46] min-[480px]:[zoom:0.6] sm:[zoom:0.9] md:[zoom:1] xl:[zoom:0.8] min-[1366px]:[zoom:0.86] min-[1440px]:[zoom:0.9] 2xl:[zoom:1]"><div className="relative min-h-[660px]">
             <div
               aria-hidden="true"
               className="absolute left-1/2 top-[40px] h-[540px] w-[540px] -translate-x-1/2 rounded-full opacity-70"
@@ -183,16 +183,16 @@ function PricingPage() {
             />
 
             {/* Handwriting top */}
-            <div className="pointer-events-none absolute left-[120px] top-0 hidden w-[230px] rotate-[-6deg] text-center font-hand text-[30px] font-bold leading-[1.15] text-ink xl:block">
+            <div className="pointer-events-none absolute left-[120px] top-0 w-[230px] rotate-[-6deg] text-center font-hand text-[30px] font-bold leading-[1.15] text-ink">
               Invest
               <br />
               in a Smarter
               <br />
               Tomorrow
             </div>
-            <ArrowCurveDown className="absolute left-[330px] top-[52px] hidden text-ink xl:block" />
-            <Scribble className="absolute left-[55px] top-[110px] hidden text-[#2b3a8f] xl:block" />
-            <ScribbleRed className="absolute right-[8px] top-[70px] hidden text-brand xl:block" />
+            <ArrowCurveDown className="absolute left-[330px] top-[52px] text-ink" />
+            <Scribble className="absolute left-[55px] top-[110px] text-[#2b3a8f]" />
+            <ScribbleRed className="absolute right-[8px] top-[70px] text-brand" />
 
             <div className="relative flex items-start justify-center pt-[105px]">
               {/* Starter */}
@@ -294,33 +294,33 @@ function PricingPage() {
             </div>
 
             {/* Handwriting bottom */}
-            <div className="pointer-events-none absolute bottom-[10px] right-[10px] hidden w-[220px] rotate-[-8deg] text-center font-hand text-[29px] font-bold leading-[1.15] text-ink xl:block">
+            <div className="pointer-events-none absolute bottom-[10px] right-[10px] w-[220px] rotate-[-8deg] text-center font-hand text-[29px] font-bold leading-[1.15] text-ink">
               Flexible Plans
               <br />
               Real Results
             </div>
-            <ArrowCurveLeft className="absolute bottom-[42px] right-[230px] hidden text-ink xl:block" />
-          </div>
+            <ArrowCurveLeft className="absolute bottom-[42px] right-[230px] text-ink" />
+          </div></div>
         </div>
 
         {/* Stats */}
-        <section className="mt-6 rounded-[26px] bg-white/70 p-6 pb-8">
+        <section className="mt-6 rounded-[26px] bg-white/70 p-3 sm:p-6 sm:pb-8">
           <div className="grid grid-cols-2 gap-y-8 rounded-[20px] bg-white/60 px-4 py-8 lg:grid-cols-4">
             {stats.map(({ icon: Icon, value, label }, i) => (
               <div
                 key={label}
-                className={`flex items-center justify-center gap-5 ${
+                className={`flex items-center gap-3 sm:justify-center sm:gap-5 ${
                   i > 0 ? "lg:border-l lg:border-border" : ""
                 }`}
               >
-                <span className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-brand-soft text-brand">
+                <span className="flex h-[48px] w-[48px] shrink-0 items-center sm:h-[68px] sm:w-[68px] justify-center rounded-full bg-brand-soft text-brand">
                   <Icon className="h-[30px] w-[30px]" strokeWidth={2} />
                 </span>
                 <span>
-                  <span className="block text-[29px] font-extrabold leading-none text-ink">
+                  <span className="block text-[22px] font-extrabold sm:text-[29px] leading-none text-ink">
                     {value}
                   </span>
-                  <span className="mt-1.5 block text-[16px] text-ink-soft">{label}</span>
+                  <span className="mt-1.5 block text-[13px] text-ink-soft sm:text-[16px]">{label}</span>
                 </span>
               </div>
             ))}
