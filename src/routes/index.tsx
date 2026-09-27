@@ -137,7 +137,7 @@ function PricingPage() {
               plan for you. No hidden charges, no surprises — just real value.
             </p>
 
-            <ul className="mt-9 flex flex-wrap gap-x-7 gap-y-5">
+            <ul className="mt-9 flex flex-nowrap items-center gap-x-6">
               {highlights.map(({ icon: Icon, line1, line2 }) => (
                 <li key={line1} className="flex items-center gap-3">
                   <span className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-brand-soft text-brand">
@@ -190,13 +190,13 @@ function PricingPage() {
               <br />
               Tomorrow
             </div>
-            <ArrowCurveDown className="absolute left-[350px] top-[62px] hidden text-ink xl:block" />
+            <ArrowCurveDown className="absolute left-[330px] top-[52px] hidden text-ink xl:block" />
             <Scribble className="absolute left-[55px] top-[110px] hidden text-[#2b3a8f] xl:block" />
             <ScribbleRed className="absolute right-[8px] top-[70px] hidden text-brand xl:block" />
 
             <div className="relative flex items-start justify-center pt-[105px]">
               {/* Starter */}
-              <article className="mt-[35px] w-[230px] -rotate-[2deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="mt-[35px] w-[240px] -rotate-[2deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Starter</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Small Businesses</p>
                 <p className="mt-4">
@@ -227,7 +227,7 @@ function PricingPage() {
               {/* Growth */}
               <article className="relative z-10 -mx-4 w-[272px] rounded-[26px] bg-white p-8 pt-12 text-center shadow-card-lg">
                 <span
-                  className="absolute -top-[22px] left-1/2 inline-flex h-[44px] -translate-x-1/2 items-center gap-2 rounded-full px-6 text-[15px] font-semibold text-violet-foreground"
+                  className="absolute -top-[22px] left-1/2 inline-flex h-[44px] -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full px-6 text-[15px] font-semibold text-violet-foreground"
                   style={{ backgroundImage: "var(--gradient-violet)" }}
                 >
                   <Crown className="h-[17px] w-[17px] fill-current" strokeWidth={1.5} />
@@ -263,7 +263,7 @@ function PricingPage() {
               </article>
 
               {/* Enterprise */}
-              <article className="mt-[52px] w-[230px] rotate-[2deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="mt-[52px] w-[244px] rotate-[2deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Enterprise</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Large Organizations</p>
                 <p className="mt-4">
