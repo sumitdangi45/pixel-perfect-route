@@ -67,7 +67,7 @@ function PricingPage() {
     >
       {/* Nav */}
       <header className="w-full bg-white">
-        <div className="mx-auto flex h-[100px] max-w-[1536px] items-center justify-between px-10">
+        <div className="mx-auto flex h-[90px] max-w-[1536px] items-center justify-between px-[60px]">
           <a href="/" className="flex items-center gap-3">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
               <path
@@ -82,7 +82,7 @@ function PricingPage() {
               </defs>
             </svg>
             <span className="leading-none">
-              <span className="block text-[30px] font-extrabold tracking-tight text-ink">Anni</span>
+              <span className="block text-[34px] font-bold tracking-tight text-ink">Anni</span>
               <span className="mt-0.5 block text-[10.5px] font-bold tracking-[0.13em] text-ink">
                 WEB SOLUTIONS PVT. LTD.
               </span>
@@ -96,8 +96,8 @@ function PricingPage() {
                 href="#"
                 className={
                   item.active
-                    ? "relative py-[38px] text-[15px] font-semibold text-brand after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:rounded-full after:bg-brand after:content-['']"
-                    : "py-[38px] text-[15px] font-medium text-ink transition-colors hover:text-brand"
+                    ? "relative py-[34px] text-[15px] font-medium text-brand after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:rounded-full after:bg-brand after:content-['']"
+                    : "py-[34px] text-[15px] font-normal text-ink transition-colors hover:text-brand"
                 }
               >
                 {item.label}
@@ -117,7 +117,7 @@ function PricingPage() {
       </header>
 
       {/* Hero */}
-      <main className="relative mx-auto max-w-[1536px] px-10">
+      <main className="relative mx-auto max-w-[1536px] pl-[76px] pr-[60px]">
         <div className="grid items-start gap-10 pt-[60px] lg:grid-cols-[minmax(0,640px)_minmax(0,1fr)]">
           {/* Left */}
           <div>
@@ -126,7 +126,7 @@ function PricingPage() {
               Simple &amp; Transparent Pricing
             </span>
 
-            <h1 className="mt-8 text-[68px] font-extrabold leading-[1.06] tracking-[-0.02em] text-ink">
+            <h1 className="mt-9 text-[80px] font-bold leading-[1.0] tracking-[-0.02em] text-ink">
               Plans for Every
               <br />
               <span className="text-brand-dark">Stage of Growth</span>
@@ -140,10 +140,10 @@ function PricingPage() {
             <ul className="mt-9 flex flex-nowrap items-center gap-x-6">
               {highlights.map(({ icon: Icon, line1, line2 }) => (
                 <li key={line1} className="flex items-center gap-3">
-                  <span className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-brand-soft text-brand">
+                  <span className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-brand-soft text-brand">
                     <Icon className="h-[19px] w-[19px]" strokeWidth={2} />
                   </span>
-                  <span className="whitespace-nowrap text-[16px] font-medium leading-[1.3] text-ink">
+                  <span className="whitespace-nowrap text-[16px] font-normal leading-[1.45] text-ink">
                     {line1}
                     <br />
                     {line2}
@@ -313,8 +313,8 @@ function PricingPage() {
                   i > 0 ? "lg:border-l lg:border-border" : ""
                 }`}
               >
-                <span className="flex h-[58px] w-[58px] items-center justify-center rounded-full bg-brand-soft text-brand">
-                  <Icon className="h-[26px] w-[26px]" strokeWidth={2} />
+                <span className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-brand-soft text-brand">
+                  <Icon className="h-[30px] w-[30px] fill-current" strokeWidth={2} />
                 </span>
                 <span>
                   <span className="block text-[29px] font-extrabold leading-none text-ink">
