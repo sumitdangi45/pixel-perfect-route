@@ -218,7 +218,7 @@ export function PlansSection() {
               )}
               <p className="mt-6 text-[15px] font-bold text-brand">{p.tag}</p>
               <p className="mt-4 text-[16px] leading-[1.75] text-ink-soft sm:text-[17px]">
-                {p.desc(industries[industry].who[idx])}
+                {p.desc(industries[industry]?.who[idx] ?? "businesses")}
               </p>
               <hr className="my-7 border-border" />
               <ul className="space-y-3.5">
