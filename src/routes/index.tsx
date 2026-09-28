@@ -172,10 +172,10 @@ function PricingPage() {
           </div>
 
           {/* Right: cards */}
-          <div className="mx-auto w-[740px] [zoom:0.46] min-[480px]:[zoom:0.6] sm:[zoom:0.9] md:[zoom:1] xl:[zoom:0.8] min-[1366px]:[zoom:0.86] min-[1440px]:[zoom:0.9] 2xl:[zoom:1]"><div className="relative min-h-[660px]">
+          <div className="mx-auto w-full max-w-[360px] sm:max-w-none sm:w-[740px] sm:[zoom:0.9] md:[zoom:1] xl:[zoom:0.8] min-[1366px]:[zoom:0.86] min-[1440px]:[zoom:0.9] 2xl:[zoom:1]"><div className="relative sm:min-h-[660px]">
             <div
               aria-hidden="true"
-              className="absolute left-1/2 top-[40px] h-[540px] w-[540px] -translate-x-1/2 rounded-full opacity-70"
+              className="absolute left-1/2 top-[40px] max-sm:hidden h-[540px] w-[540px] -translate-x-1/2 rounded-full opacity-70"
               style={{
                 background:
                   "radial-gradient(circle at 50% 50%, oklch(0.9 0.06 300 / .55), transparent 68%)",
@@ -183,20 +183,20 @@ function PricingPage() {
             />
 
             {/* Handwriting top */}
-            <div className="pointer-events-none absolute left-[120px] top-0 w-[230px] rotate-[-6deg] text-center font-hand text-[30px] font-bold leading-[1.15] text-ink">
+            <div className="pointer-events-none absolute max-sm:hidden left-[120px] top-0 w-[230px] rotate-[-6deg] text-center font-hand text-[30px] font-bold leading-[1.15] text-ink">
               Invest
               <br />
               in a Smarter
               <br />
               Tomorrow
             </div>
-            <ArrowCurveDown className="absolute left-[330px] top-[52px] text-ink" />
-            <Scribble className="absolute left-[55px] top-[110px] text-[#2b3a8f]" />
-            <ScribbleRed className="absolute right-[8px] top-[70px] text-brand" />
+            <ArrowCurveDown className="absolute max-sm:hidden left-[330px] top-[52px] text-ink" />
+            <Scribble className="absolute max-sm:hidden left-[55px] top-[110px] text-[#2b3a8f]" />
+            <ScribbleRed className="absolute max-sm:hidden right-[8px] top-[70px] text-brand" />
 
-            <div className="relative flex items-start justify-center pt-[105px]">
+            <div className="relative flex flex-col gap-10 pt-6 sm:flex-row sm:items-start sm:justify-center sm:gap-0 sm:pt-[105px]">
               {/* Starter */}
-              <article className="mt-[35px] w-[240px] -rotate-[4deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="sm:mt-[35px] sm:w-[240px] sm:-rotate-[4deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Starter</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Small Businesses</p>
                 <p className="mt-4">
@@ -225,7 +225,7 @@ function PricingPage() {
               </article>
 
               {/* Growth */}
-              <article className="relative z-10 -mx-4 w-[272px] rounded-[26px] bg-white p-8 pt-12 text-center shadow-card-lg">
+              <article className="relative z-10 max-sm:order-first sm:-mx-4 sm:w-[272px] rounded-[26px] bg-white p-8 pt-12 text-center shadow-card-lg">
                 <span
                   className="absolute -top-[22px] left-1/2 inline-flex h-[44px] -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full px-6 text-[15px] font-semibold text-violet-foreground"
                   style={{ backgroundImage: "var(--gradient-violet)" }}
@@ -263,7 +263,7 @@ function PricingPage() {
               </article>
 
               {/* Enterprise */}
-              <article className="mt-[52px] w-[244px] rotate-[3.5deg] rounded-[22px] bg-white p-7 shadow-card">
+              <article className="sm:mt-[52px] sm:w-[244px] sm:rotate-[3.5deg] rounded-[22px] bg-white p-7 shadow-card">
                 <h3 className="text-[21px] font-bold text-ink">Enterprise</h3>
                 <p className="mt-1 text-[13.5px] text-ink-soft">For Large Organizations</p>
                 <p className="mt-4">
@@ -294,12 +294,12 @@ function PricingPage() {
             </div>
 
             {/* Handwriting bottom */}
-            <div className="pointer-events-none absolute bottom-[10px] right-[10px] w-[220px] rotate-[-8deg] text-center font-hand text-[29px] font-bold leading-[1.15] text-ink">
+            <div className="pointer-events-none absolute max-sm:hidden bottom-[10px] right-[10px] w-[220px] rotate-[-8deg] text-center font-hand text-[29px] font-bold leading-[1.15] text-ink">
               Flexible Plans
               <br />
               Real Results
             </div>
-            <ArrowCurveLeft className="absolute bottom-[42px] right-[230px] text-ink" />
+            <ArrowCurveLeft className="absolute max-sm:hidden bottom-[42px] right-[230px] text-ink" />
           </div></div>
         </div>
 
