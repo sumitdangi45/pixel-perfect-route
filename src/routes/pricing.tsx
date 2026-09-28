@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PlansSection } from "@/components/pricing/PlansSection";
 import { WorkflowAndMatrix } from "@/components/pricing/WorkflowAndMatrix";
+import { TermsAndCta } from "@/components/pricing/TermsAndCta";
 import {
   ArrowRight,
   BadgeIndianRupee,
@@ -271,6 +272,8 @@ function PricingPage() {
         <PlansSection />
         <div className="h-16" />
         <WorkflowAndMatrix />
+        <div className="h-16" />
+        <TermsAndCta />
         <div className="h-16" />
       </main>
     </div>

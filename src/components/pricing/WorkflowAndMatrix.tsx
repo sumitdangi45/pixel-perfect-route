@@ -27,7 +27,9 @@ const rows: [string, V, V, V][] = [
   ["AI Chatbot & Lead Assistant", false, false, true],
   ["Marketing Automation", false, false, true],
   ["Analytics & Reports", "Basic", "Monthly", "Advanced Dashboard"],
-  ["Support", "Email", "Priority", "Dedicated Manager"],
+  ["AEO (Answer Engine Optimization for ChatGPT/AI Search)", false, false, true],
+  ["Custom API & Third-party CRM/ERP Integrations", false, false, true],
+  ["Dedicated VIP Account Manager & Priority SLA", "Standard Support", "Priority Support", "VIP Dedicated"],
 ];
 
 function Cell({ v, hl }: { v: V; hl?: boolean }) {
