@@ -23,6 +23,7 @@
   --color-brand-foreground: var(--brand-foreground);
   --color-brand-dark: var(--brand-dark);
   --color-brand-soft: var(--brand-soft);
+  --color-brand-light: var(--brand-light);
   --color-violet: var(--violet);
   --color-violet-foreground: var(--violet-foreground);
   --color-ink: var(--ink);
@@ -82,6 +83,8 @@
   --brand-foreground: oklch(0.99 0 0);
   --brand-dark: oklch(0.33 0.15 20);
   --brand-soft: oklch(0.96 0.02 20);
+  --brand-light: oklch(0.78 0.12 22);
+  --gradient-cta-dark: linear-gradient(120deg, oklch(0.22 0.06 20), oklch(0.32 0.13 22) 60%, oklch(0.4 0.17 22));
   --violet: oklch(0.52 0.24 290);
   --violet-foreground: oklch(0.99 0 0);
   --ink: oklch(0.16 0.02 270);
